@@ -1,0 +1,174 @@
+Take a string input and check if it can be a strong password or not by showing strong or weak text and also showing why it is weak or invalid and also asking for multiple times until the user gives the right password.
+
+Now we are updating the question by changing it to ask for the re-entering of the password only a limited number of times and also termniate after that. 
+
+
+
+
+isValid = true;
+attempts = 5; 
+while(isValid) 
+{ 
+	print "Enter your password : " 
+	String str = sc.nextLine(); 
+if( str.length() > = 8 )
+{ 
+	for( i = 0 ; i < str.length() ; i++)
+	{
+			if( str[i] >= 'A') // 
+				UC = true; 
+				L, Digits, Sp,
+		} 
+	} 
+} 
+if( UC, LC, DC, SPC ) 
+	print STRONGGGGGGGGGGGGGGGG password...............😀
+	return;  // break; 
+else   // entering else block only if the password is weak or invalid 
+{ 	
+	if( attempts == 0 )
+		print "Attempts limit exceeded and try again after some days... till then BYBYEEEEEEEEEEE"
+		break;
+	attempts--; 
+	print "Attempts left : "+attempts; 
+	if( ! UC )		
+			print "Uppercase is missing" 
+	if ( ! LC ) 
+			
+
+	
+} 
+
+} 
+if( UC && LC && DC && SC ) 
+	print VALID 	
+else 
+	INVALID 
+'
+
+
+
+
+
+
+
+
+
+
+
+Input : 49.42.183.12   (Which datatype) 
+
+Check if it can be a valid IP address or not 
+
+Valid : 123.123.123.123 
+Invalid : 123.123.123.123.123  
+Invalid : 152.25.69
+Invalid : 258.12.36.69 
+Invalid : -69.58.23.106 
+Invalid : 080.78.01.44   => Invalid IP Address ---> Valid IP Address 
+
+007 - > 3 
+07 -> 2
+
+if ( part.length == 2 )
+	Length 2 -> [0] != '0'  
+if ( part.length == 3 )
+Length 3 -> ( [0] != '0' and [1] != '0' ) || ( [0] != '0' && [1] == '0' );    //  007 -> 101 
+
+080 = 80 
+78 = 78 
+01 = 1 
+44 = 44 
+
+len(ip) >=7 and len(ip) <= 15 or ""
+
+Rule : All port values should be in the range of 0 and 255 (Both included) 
+
+
+
+
+
+
+1413
+
+
+1 ^ 4 + 4 ^ 4 + 1 ^ 4 + 3 ^ 4 
+
+
+153 = 1 + 125 + 27 = 153 
+122 = 1 + 8 + 8 = 17 
+
+12311 
+
+Power = 5 
+ 
+
+
+
+
+Input :    "Hehehe Andrew Garfield Imposter ARISE Chewing Gum Meow Break No Way"
+
+Output : "Way No Break Meow Gum Chewing ARISE Imposter Garfield Andrew Hehehe"
+
+
+current = ""
+reverse= ""
+
+if( str[i] ! = ' ') 
+	current = str[i] + " " + current;   // y + "" = y, a+y = ay, W+ay = Way 
+else
+	reverse = reverse + current+ " " ; // "" + Way + " " -> Way 
+	current = ""
+
+
+i was thinking of giving the homework but i will be doing it from tomorrow also so no problem it is okay  life is like that we don't care. 
+
+
+open 
+
+
+tinyurl.com/MCABCATCS  : Join this and i will be sharing the updates of the class and notes with some important questions. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

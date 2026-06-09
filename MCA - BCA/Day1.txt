@@ -1,0 +1,125 @@
+Input1 : "C43G51U i22s G45oo7d..18. Um55mm40,,,, M21ay69be"
+
+43 51 22 45 7 18 55 40 21 69 
+
+Output1 : 69 
+
+Input2 : "C17G10U721"
+
+17 10 721 
+
+Output2 : 721
+
+
+
+
+
+str = "C43G5U i2s G4oo7d..8. Um5mm4,,,, M2aybe"
+maxDig = 0 
+for(int i = 0 ; str.length() ; i++)
+{ 
+	if(  str[i] >= '0' && str[i] <= '9' )   // '4' => 4 
+	{ 
+		int dg = str[i] - '0' ;  // 53 - 48 = 5
+		if ( dg > maxDig)  // 2 > 8
+			maxDig = dg	  // 8
+	} 
+}  // for loop string iteration 
+print (maxDig) 
+
+
+
+Number Destruction 
+
+1234 % 10 => 4  
+1234 / 10  => 123 
+ 
+Number Construction 
+
+num = 0 
+num = num * 10 + dig   // 0 * 10 + 4 = 4*10+3=43*10+2=432*10+1= 4321 
+num = 4321 
+
+
+
+
+str = "C43G51U i22s G45oo7d..18. Um55mm40,,,, M21ay69be"
+
+																	// 43 51 22 45 7 18 55 40 21 69 
+maxNum = 0 
+num = 0 												//// Input2 : "C17G10U721"
+for(int i = 0 ; str.length() ; i++)  //0, 4, 
+{ 
+	if(  str[i] >= '0' && str[i] <= '9' )   // '4' => 4  /// i = 1
+	{ 		
+		while( str[i] >= '0' && str[i] <= '9') // i = 4
+		{ 
+			int dig = str[i] - '0' ;  // = 3
+			num = num * 10 + dig ; // 4*10+3 = 43   
+			i++; // 1,2,3,5,6,7,8,9					
+		}
+		if( num > maxNum )    
+			maxNum = num;
+			num = 0 
+	}  		
+}
+
+
+
+
+
+
+
+
+
+Input :   [0,1,0,1,0,1,1,1,0,1,1,0]
+
+
+Ouput1 : [0,0,0,0,0,1,1,1,1,1,1,1]
+
+Output2 : 0,0,0,0,0,1,1,1,1,1,1,1
+
+
+
+arr = [0,1,0,1,0,1,1,1,0,1,1,0]
+
+ZeroCount=0
+for i in arr: 
+	if i == 0: 
+		ZeroCount = ZeroCount + 1 // 5
+
+for i in range (0,len(arr)): 
+	if i < ZeroCount: // 0 1 2 3 4 
+		arr[i] = 0
+	else 					
+		arr[i] = 1 
+
+print(arr) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Input :   [0,2,1,0,1,2,0,1,2,1,1,0]
+
+Ouput : [2,2,2,0,0,0,0,1,1,1,1,1]
+
+
+
+
+
+
+
+
+
+

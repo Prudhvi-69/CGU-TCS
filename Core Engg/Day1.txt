@@ -1,0 +1,103 @@
+Input : 
+3 4 6 8 7 1 4 6 6 8 
+
+
+// 0 : 48, 1 : 49, 2 : 50,....... 9 : 57      : ASCII of 0 to 9 
+// A : 65, B : 66, C : 67,......... Z : 90  : ASCII of A to Z 
+// a : 97, b : 98, c : 99,..........z : 122  : ASCII of a to z 
+// * : 42 
+// space : 32 
+str = "C3G4U 6is g8ood place.7.... umm1mm4.... 6may6be8"
+int max = 0; 
+for( int i = 0; i < str.length() ; i++ ) 
+{
+	if ( str[i] >= '0' && str[i] <= '9')  // 3 4 6 8 7 1 4 6 6 8 
+	{
+		int digit = str[i] - 48; //  49 - 48 = 1  
+			if( digit > max)     // 1>8 
+				max = digit ;  // 8
+	}
+}
+Output: 8 
+  
+
+
+
+
+Input : "C13G41U 69is g18ood p45lace.7.... umm10mm49.... 67may36be18"
+
+int max = 0; 
+int num = 0;
+for( int i = 0; i < str.length() ; i++ ) 
+{
+	if ( str[i] >= '0' && str[i] <= '9')  
+	{
+		int digit = str[i] - 48; 
+		num = num * 10 + digit; // 0*10+4// 4*10+1 = 41 
+	}
+	else
+	{
+		if( num > max )
+				max = num; //0, 13, 41, 69 
+				num = 0;
+	}
+}
+		// 
+
+
+
+
+rev = 0 
+num = 789 
+while(num != 0) //789, 78, 7, 0 
+{
+	digit = num % 10;  // 7  
+	rev = rev * 10 + digit;  // 98 * 10 + 7 = 980+7=987  
+	num = num / 10; //0
+} 
+print => rev = 987 
+
+
+
+
+
+
+Input :    [1,0,1,0,1,0,0,0,1,1,0]
+
+Output1 : [0,0,0,0,0,0,1,1,1,1,1]
+
+Output2 :  0,0,0,0,0,0,1,1,1,1,1
+
+
+int Arr[] =  { 1,0,1,0,1,0,0,0,1,1,0 } 
+int ZeroCount = 0;
+for(int i = 0; Arr.length ; i++)
+{ 
+	if (Arr[i] == 0)
+		ZeroCount++;  // 6 
+} 
+for(int i = 0; Arr.length ; i++)
+{ 
+	if(i < ZeroCount)   // 0 1 2 3 4 5 
+		Arr[i] = 0;
+	else 							// 6 7 8 9 10 
+		Arr[i] = 1;    
+} 
+
+// Display the values in the Array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

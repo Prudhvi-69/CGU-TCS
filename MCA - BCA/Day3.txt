@@ -1,0 +1,103 @@
+Input : "Hungry Stoic Sir People Irritated Meow Raining Hi"
+
+String smallest=str; 
+String current = ""; 
+for(i = 0 ; i< str.length(); i++)
+{ 
+	if( str.charAt(i) != ' ') 
+		current=current+str.charAt(i); 
+	else
+	{ 
+		if( smallest.length() > current.length() ) //  3 > 7   
+		{ 
+			smallest = current; // Hungry -> Stoic -> Sir -> 
+		} 
+		current = ""; 
+	} 
+} 
+if (smallest.length() > current.length())
+	smallest = current; 
+print smallest 
+
+Output : "Sir"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Take a string input and check if it is going to be a Strong or Valid password or not. 
+
+*_* Rules *_*
+
+-> An uppercase
+-> A lowercase
+-> A special character 
+-> A Digit 
+-> Minimum length of 8 
+
+-_- Restriction -_-
+
+Do not use any built-in functions, the code should be plain without any of those functions and classes( if you are using Java as the main language) 
+
+isValid = true;
+while(isValid) 
+{ 
+	print "Enter your password : " 
+	String str = sc.nextLine(); 
+for( i = 0 ; i < str.length() ; i++)
+{
+	if( str.length() > = 8 )
+	{ 
+		if( str[i] >= 'A') // 
+			UC = true; 
+
+
+
+} 
+if( UC && LC && DC && SC ) 
+	print VALID 	
+else 
+	INVALID 
+
+
+// 0 - 9 : 48 to 57 
+// A - Z : 65 to 90 
+// a - z : 97 to 122 
+// space : 32 
+// * : 42 
+// 
+
+
+
+
+
+
+
+

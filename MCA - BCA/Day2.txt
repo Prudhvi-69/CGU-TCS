@@ -1,0 +1,150 @@
+[2, 32, 6, 55, 45, 7, 18, 49, 9, 69, 10, 99, 18, 264, 10, 55, 7, 9, 69]  
+Output1 : 2, 32, 6, 45, 49, 99, 264 (Non repeated values) 
+
+Output2 :   55, 7, 18, 9, 69, 10 (Repeated values) 
+
+
+for(i = 0 ; i < arr.length ; i++)    // these things > n 
+{ 
+	for( j = i+1 ; j < arr.length ; j++ )  // 14+1 > 15  
+	{ 
+		if(arr[i] == arr[j] )       // for checking non repeated values : if( arr[i] != arr[j]) by copying the entire for loops 
+			print arr[i]+ " "   // 55, print repeated values   repeat.apennd(arr[i])   // repeat[a++] = arr[i] 
+		 // non repeated values 	else	nonrepeat.append(arr[i])   // nonrepeat[b++] = arr[i] 
+	}
+} 
+
+# below are the ones for the people who are going to do the code in python by taking two extra lists and append values
+# print repeat
+# print nonrepeat
+
+
+
+
+
+
+Keep all the even values to the left and odd values to the right
+ ---- Using the two pointer approach we have solved this at the bottom using left and right pointer 
+input :   [18, 99, 27, 16, 7, 11, 45, 30, 55, 69, 49, 3, 10, 98, 73]
+right = arr.length-1			        																		
+left = 0 
+	while(left < right )
+	{ 	
+		while( left < right && arr[ left ] % 2 == 0)
+			left++; 			
+		while( left < right && arr[ right ] % 2 == 1) 
+			right--;
+		
+		if( left < right ) 
+		{ 
+			int temp = arr[ left ];  
+			arr[ left ] = arr[ right ]; 
+			arr[ right ] = temp;
+			left++;
+			right++;
+		} 
+	} 
+ 
+print the Array
+[18, 98, 10, 16, 30, 11, 45, 7, 55, 69, 49, 3, 27, 99, 73]
+	  	  	        lr 			
+
+
+output : [18, 16, 30, 10, 98, 99, 27 ,7 ,11 ,45 ,55 ,69 ,49 ,3 ,73]
+
+
+
+
+
+
+
+
+
+Input :    "Y2o6u7r5 N8am0e"
+
+Output : "Y0o8u5r7 N6am2e"
+
+
+or you can use the previous code to make changes for this current question to be solved it is really easy just to change a datatype of a variable and also the condition in two different places from the existing code only 
+
+the if condition on the board can also be replaced with a whole loop like we have done before when we were trying to solve the question before that replacement one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        int arr[]= {18, 99, 27, 16, 7, 11, 45, 30, 55, 69, 49, 3, 10, 98, 73};
+        int right = arr.length-1;			        																		
+        int left = 0; 
+	while(left < right )
+	{ 	
+		while( left < right && (str[left]<'0' && str[left]>'9'))
+			left++; 			
+		while( left < right && (str[right]<'0' && str[right]>'9')) 
+			right--;
+		
+		if( left < right ) 
+		{ 
+			char temp = arr[ left ];  
+			arr[ left ] = arr[ right ]; 
+			arr[ right ] = temp;
+			left++;
+			right++;
+		} 
+	} 
+    
+    for(int num:arr){
+        System.out.print(" "+num);
+    }
+    }
+}
+
+
+
+
+
+
+# Online Python Compiler
+# Use this editor to write, compile and run your Python code online
+
+str = "Y2o6u7r5 N8am0e"
+right = len(str) - 1
+left = 0
+
+while left < right:
+    while left < right and (ord(str[left])>=48 && ord(str[left])<=57):
+        left += 1
+    while left < right and (ord(str[right])>=48 && ord(str[right])<=57):
+        right -= 1
+    
+    if left < right:
+        temp = arr[left]
+        arr[left] = arr[right]
+        arr[right] = temp
+        left += 1
+        right -= 1
+
+for num in arr:
+    print(f" {num}", end="")
+print()
+
+
+
+

@@ -1,0 +1,155 @@
+Input : [ 49, 72, 28, 7, 9, 15, 53, 16, 4, 69, 999, 32, 66, 6, 100, 97, 2803 ]
+
+Rearrange the values in the array by keeping all the even values to the left and the odd values to the right side in the array.....
+
+Input : [ 49, 72, 28, 7, 9, 15, 53, 16, 4, 69, 999, 32, 66, 6, 100, 97, 2803 ]
+		    	L																					R
+				0     1    2   3    4    5    6    7
+		Arr = [  18, 16, 70, 96, 99, 7, 17, 45 ]	
+				  	 		  R 	 L  
+left = 0 
+right = arr.length 
+while(left < right)    // 1 
+{
+	while( arr[left] % 2 == 0  && left < right)  // 4 
+		left++; 
+	while( arr[right] % 2 == 1 && left < right ) // 4 
+		right--;
+	
+	if( left < right )
+	{ 
+		int temp = arr[ left ];
+		arr[ left ] = arr[ right ]; 
+		arr[ right ] = temp; 
+		left++; 
+		right--; 
+	} 
+}
+
+
+
+
+
+
+
+Input :   "Y8o4u3r      N2a6m5e"
+			             LR
+left = 0 
+right = arr.length()-1 // strlen(arr) // len(arr)    = 14 
+while(left < right)    
+{
+	while(  (arr[left] < 48 && arr[left] >57 ) && left < right)  // 4 
+		left++; 
+	while( arr[right] < 48 && arr[right] > 57 ) && left < right ) // 4 
+		right--;
+	if( left < right )
+	{ 									// In Java 			
+		char temp = arr[ left ];   // arr.charAt(left)
+		arr[ left ] = arr[ right ]; 	 // arr.charAt(right) 
+		arr[ right ] = temp; 		 
+		left++; 
+		right--; 
+	} 
+}
+
+
+Output :  "Y8o4u3r N2a6m5e"
+
+
+
+
+
+
+Input : [ 67, 9, 8, 9, 24, 98, 68, 67, 69, 18, 0, 69, -23, 0, 18, 7 ]
+		    0   1  2   3  4 
+																		  i   j 
+Repeated Values : 		67, 9, 69, 18, 0
+
+Non Repeated Values :  8, 24, 98, 68, -23, 7 
+
+
+int N = sizeof(arr);   //15 
+int N = arr.length; 
+print "Repeated Values : "
+for( i = 0 ; i < N ; i++)
+{
+	for(j = i+1 ; j< N ; j++)   // 14+1 < 15 
+	{ 
+		if( arr[i] == arr[j] )
+			print arr[i]; 		
+	}
+} 
+print " \n Non repeated values :" 
+for( i = 0 ; i < N ; i++)
+{
+	for(j = i+1 ; j< N ; j++)   // 14+1 < 15 
+	{ 
+		if( arr[i] != arr[j] )
+			print arr[i]; 		
+	}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+THIS IS THE END......................
+
+LET THE SKYFALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
