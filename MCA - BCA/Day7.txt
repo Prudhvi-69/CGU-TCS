@@ -1,0 +1,74 @@
+Input    : 102311
+Output : True 
+
+Input    : 8730185204234
+Output : True 
+
+Input 	: 0371142469
+Output : False 
+
+Input : 75441969830
+Output : True 
+
+Input : 916241794118
+Output : False 
+
+
+
+
+
+
+
+
+
+Valid Anagram 
+
+
+Input1 : "Listen, Sir!" 
+Input2 : "Silent, irs"
+Output : Krue 
+
+Input1 : "Dormitory!!!"
+Input2 : "Dirty room?"
+Output : Krue 
+
+Input1 : "Hello"
+Input2 : "lel"
+Output : Palse 
+
+
+
+
+
+
+
+
+
+Take an integer input and check if that number can become a Spy Number or not ? 
+
+
+Find out what is a Spy Number?? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

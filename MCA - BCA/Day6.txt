@@ -1,0 +1,167 @@
+Input : 759412170341
+Output : 8
+
+Input : 4596139376 
+Output : 8
+
+Input : 5462317 
+Output : 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int value = 15234 ===> 15  1+5 =>6 
+
+while( value > 9) // 15 
+{ 
+	int sum = 0; 
+	while( value > 0 ) 
+	{ 
+		int digit = value % 10;  // 5
+		sum  += digit; 			 // 0+5 = 5+1 = 6 
+		value /= 10;				
+	} // 6  
+	value = sum;   // 6
+} 
+print(value) // 6 
+
+
+
+
+
+
+int n = 18 ===> 9 
+
+if ( n <= 9)
+	print n; 
+else 
+{
+	1 + ( (n-1) % 9 );  // n%9 // 1 + ( 18 - 1) % 9 
+							// 1 + 17 % 9 = 1 + 8 = 9 
+} 
+
+
+n = 999
+res = n % 9;
+if(res == 0) 
+	print 9
+else 
+	print result 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HantELEP 
+4
+
+HantELEP 
+
+
+
+substring()
+str = "ELEPHant"      //Java 
+inp2 = 4 
+first = "";
+last = "";
+for ( i = 0; i< str.length() ; i++ )
+{
+	if( i < inp2) 
+		first = first+str.charAt(i);
+	else
+		last = last + str.charAt(i);
+} 
+sop(last + first);
+
+#Python
+str = "SenseI"
+inp2 = 3
+first = ""
+last = ""
+for i in range(len(str) ):
+	if i < inp2:
+		first = first+str[i] 
+	else: 
+		last = last + str[i]
+print last + first 
+
+
+
+
+
+
+
+a  = 6
+b  = 9
+li = [] 
+li[0] = a
+li[1] = b
+a = li[1] 
+b = li[0] 
+
+ 
+Collections.swap(a,b)
+
+a,b = b,a
+
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+
+
+b = (a+b) - (a=b) 
+
+b = ( a != b) ? (a+b) - (a=b) : b; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

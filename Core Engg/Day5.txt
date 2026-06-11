@@ -1,0 +1,53 @@
+Input :    "Inglis Indi Odessey Ichigo Quincy Mayuri Knife Mystery Compact Unohana"
+
+Output : "Unohana Compact Mystery Knife Mayuri Quincy Ichigo Odessey Indi Inglis"
+
+
+str = "Inglis Indi Odessey Ichigo Quincy Mayuri Knife Mystery Compact Unohana";
+char current[69] = "";
+char reverse[69] = "";
+int i;
+for( i = strlen(str) - 1 ; i >= 0 ; i-- )                                        
+{ 
+	if ( str[i] == ' ') 
+	{ 
+		reverse = strcat(reverse, current) ;     // reverse = reverse + " " + current
+		reverse = strcat(reverse, " ");
+		current = "";							// current = ""
+	}
+	else 
+	{ 
+		current = strcat(str[i], current);      // current = str[i] + current 
+	} 
+} 	
+
+
+
+LINK😏 : tinyurl.com/CoreEngg-tcs    : Open this link and join it, from now on we are going to have content inside this group where i will be uploading the things, questions and problems, homework(room work/hostel work/PG work/ roadside work) and also ALL THE CONTENT THAT WE ARE GOING TO HAVE IN THE CLASS, the notes and the notepad files from mt laptop will be shared and uploaded inside this link and once everyone joins i will be sharing a github repo link where i will be upoading the contents of our everyday class. 
+
+
+
+
+Question1 : 984182803 
+
+Answer : 7 (thala for a reason) 
+
+Question2 : 671205389 
+
+Answer : 5 (no need a reason for being thala for a reason) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

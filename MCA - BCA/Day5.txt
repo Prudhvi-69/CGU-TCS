@@ -1,0 +1,87 @@
+Open this repository link and keep it handy for the time when you are going to check for the class notes when you feel like that they are important or anytime when you want to trace back to any code or question or problem. 
+
+https://github.com/Prudhvi-69/CGU-TCS.git
+
+
+
+
+
+
+
+
+
+
+Input : 	  "MscKwLggXyVTdiB"
+Output : "sc"
+
+Input : "HaAPRkYUZMPa" 
+Output : "kY"
+
+Input : "DAQCTHORLI"
+Output : "OR"
+
+
+
+
+String str = sc.nextLine(); 
+int maxVal = 0 , i ;
+String maxStr = "";
+String maxChars = ""
+int index = 0;
+for( i = 0 ; i < str.length()-1 ; i++ )
+{ 
+		int currentSum = str.charAt(i) + str.charAt(i+1); 
+		if( currentSum > maxVal) 
+		{ 
+			maxVal = currentSum;
+			index = i;    // maxChars = str[i] + str[i+1]; 
+		} 
+} 
+Sop(str[ index ]+""+str[ index+1 ])   // sop(maxChars); 
+
+
+
+
+Input :	 " A man, a plan, a canal : Panama " 
+Output : true  
+
+Input :	 " A man, a plans, a canal : Panama " 
+Output : false  
+
+
+
+
+Generate a sequence containing 68 values 
+
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH BI BJ BK BL BM BN BO BP BQ   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
