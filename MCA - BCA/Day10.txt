@@ -1,0 +1,77 @@
+Consider there is a scenario where we are going to have 2 players in a game.
+These two players have to pick up balls from a jar.
+All they can do is, either pick 3 balls or pick 1 ball each time.
+We have to determine which player is going to win by taking a single integer input representing number of balls in the jar. 
+
+Take input as the following values 
+
+8
+13
+17
+19
+21 
+
+
+
+
+
+
+
+
+
+10 - 1,3
+		3,1
+		1,1,1,1
+		3,3,3,1
+		3,1,3,1,1,1,1
+
+int balls = sc.nextInt() 					balls = int(input()) 
+
+if balls % 2 == 0: 
+	print "player 2 wins" 
+else: 
+	print "player 1 wins"
+
+
+
+
+
+
+
+
+Input :   { "she","HE","BUTTER", "FLY","nermu", "sicest","finding" , "HER","CO2","korean","courier", "ANTMAN" }
+
+Output1 : 761
+Output2 : "HE"
+
+Output1 : Sum of all characters in the largest word in the given input 
+Output2 : Display the smallest word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

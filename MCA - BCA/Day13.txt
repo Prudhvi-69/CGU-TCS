@@ -1,0 +1,69 @@
+"World Shall Know Pain I am Eat Will Shorty Shawty Spectre Jelly Bean"
+
+"I am Eat Know Pain Will Bean World Shall Jelly Shorty Shawty Spectre"
+
+String str = "I am Eat Know Pain Will Bean World Shall Jelly Shorty Shawty Spectre"
+
+int wordcount = 0;
+String word []= new String[100]; 
+ String currword[] = "";
+
+for (int i=0;i<str.length();i++){
+char ch = str.charAt(i);
+if(ch != ' '){
+currchar += ch;
+} else{
+word[currentword] = currentword;
+ wordcount++;
+currentword = "";
+}
+
+if(currentword.length > 0){
+words[currentword] = currentword;
+wordcount++;
+}
+
+for(int i = 0;i<wordcount - 1;i++{
+	int j=0;	
+	while(j < wordcount - 1 - i){
+ 		if(words[j].length() > words[j+1].length()){
+			String temp = words[j];
+			words[j] = words[j+1];
+			words[j+1] = temp;
+	}
+	j++;
+}
+}
+
+for(int i=0;i<wordcount;i++){
+ System.out.print(words[i] + " ");
+}
+
+}
+
+
+
+
+"aabbbcddhiheeeeeeell"
+
+a2b3c1d2h1i1h1e7l2
+
+
+
+
+
+
+
+
+Input : 5
+
+1
+11
+21
+1211
+111221
+
+
+
+
+

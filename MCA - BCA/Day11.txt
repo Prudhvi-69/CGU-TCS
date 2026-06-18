@@ -1,0 +1,113 @@
+String = "01-01-2026"
+n = 69 
+
+day = Integer.parseInt(str.substring(0,2));   // 01 -> 1 || day = str[0:2] 
+month = Integer.parseInt(str.substring(3,5)); // 1 
+year = Integer.parseInt(str.substring(6));
+
+if( ( year % 400 ) || (year % 4 == 0 && year % 100 != 0 ) )
+	monthList = [31,29,31,30,31,30,31,31,30,31,30,31]
+else 
+	monthList = [31,28,31,30,31,30,31,31,30,31,30,31]
+
+int daysInCurrentMonth = monthList[ month -1 ] // 31
+-----------------------------------------------current : 29 01 2026   ====> 01 02 2026
+while( n ! = 0 )  //    // 3,1, 0 
+{ 
+	if ( n < (daysInCurrentMonth - n) )   // 29 <  31 - 3,  1 < 28 - 1
+	{ 
+		day = day + n;  // 0 + 1 // 1 
+		n = 0;		//0 
+	}
+	else
+	{
+		int tempDay = day;    // 29		
+		day = day + (daysInCurrentMonth - day )  //   29 + 2 = 31 // 
+		n = n - (daysInCurrentMonth - tempDay );  //   3 - 2 = 1 
+		month++;            // 2
+		daysInCurrentMonth = monthList[ month ] 
+		if( day > daysInCurrentMonth )  // 31 > 31 
+			day = 0		
+	}
+	if ( month > 12 ) 
+	{ 
+		month = 1;
+		year++ ; 
+	}
+} 
+print (day+"-"+month+"-"+year) 
+
+
+Input : [ 27, 9, 33, 48, 7, 32, 4, 85, 69 ]
+
+Output 
+
+Valleys : 9 7 4 
+Hills : 48 32 85 
+
+print "Hills : "
+for 1 --> last-1 
+	if ( (arr[i-1] < arr[i] ) && (arr[i+1] < arr[i]) )
+		print arr[i] 
+
+print "Valleys : "	
+for 1 --> last-1 
+	if ( (arr[i-1] > arr[i] ) && (arr[i+1] > arr[i]) )
+		print arr[i] 
+
+
+
+
+
+[0,0,0]
+[1,0,0]
+[1,0,0] 
+
+Output : 4 
+
+0s,1s - Represent Oranges in a basket
+0s - Represent Good Oranges
+1s - Spoiled Oranges 
+
+Keeping good oranges beside spoiled ones, will spoil them.
+
+Save as many as Oranges from being spoiled by keeping all Oranges to be spoiled. 
+
+Find out how many oranges we can save from being spoiled.
+
+
+
+
+
+1000 bottles 
+1 of them is poisoned
+10 rats 
+Poison kills in exactly 24 hours 
+Need to find the Poisoned one in a day.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

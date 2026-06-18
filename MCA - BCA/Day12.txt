@@ -1,0 +1,33 @@
+Input1 : [18, 27, 9, 35, 7, 24, 10, 98 ]
+Input2 : 3
+Output : 92610 
+
+
+Input1 : [1,1,1,1,1,1,1,1]
+Input2 : 3
+Output : 1 
+
+Find out why the output is the output ? 
+
+
+
+
+
+
+
+
+
+"Inglis Hinglish Shakes Spear Will I am Eat Oats Shorty Shawty"
+
+
+"I am Eat Will Oats Spear Inglis Shakes Shorty Shawty Hinglish"
+
+
+
+
+
+
+
+
+
+
